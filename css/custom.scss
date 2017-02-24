@@ -1,3 +1,5 @@
+@import 'fonts';
+
 $bgColor: #1256BB;
 $bgColorText: white;
 
@@ -15,8 +17,9 @@ $bgColorText: white;
 		width: 100%;
 		text-align: center;
 		color: black;
+		font-family: palanquin;
 		font-size: large;
-		font-weight: bold;
+		font-weight: 550;
 
 		#biger {
 			font-size: 200%;
