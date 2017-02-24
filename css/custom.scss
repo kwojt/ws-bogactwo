@@ -1,7 +1,6 @@
 @import 'fonts';
 
-$bgColor: #1256BB;
-$bgColorText: white;
+$UEColor: #1256BB;
 
 #top-container {
 	position: relative;
@@ -25,4 +24,43 @@ $bgColorText: white;
 			font-size: 200%;
 		}
 	}
+}
+
+nav {
+	margin: 20px 0 20px 0;
+	height: 90px;
+	background: $UEColor;
+	font-family: palanquin;
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+
+	ul{
+		height: 100%;
+		display: inline-block;
+		margin: auto;
+
+		li {
+			display: inline-block;
+			height: 100%;
+			width: 155px;
+			color: white;
+			text-align: center;
+			line-height: 90px;
+
+			&:hover {
+				background: white;
+				color: $UEColor;
+			}
+		}
+		a {
+			color: white;
+			text-decoration: none;
+
+			&:hover {
+				color: $UEColor;
+				text-decoration: none;
+			}
+		}
+	}	
 }

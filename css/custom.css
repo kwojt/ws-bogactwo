@@ -20,4 +20,33 @@
     #top-container #top-title #biger {
       font-size: 200%; }
 
+nav {
+  margin: 20px 0 20px 0;
+  height: 90px;
+  background: #1256BB;
+  font-family: palanquin;
+  font-size: large;
+  font-weight: bold;
+  text-align: center; }
+  nav ul {
+    height: 100%;
+    display: inline-block;
+    margin: auto; }
+    nav ul li {
+      display: inline-block;
+      height: 100%;
+      width: 155px;
+      color: white;
+      text-align: center;
+      line-height: 90px; }
+      nav ul li:hover {
+        background: white;
+        color: #1256BB; }
+    nav ul a {
+      color: white;
+      text-decoration: none; }
+      nav ul a:hover {
+        color: #1256BB;
+        text-decoration: none; }
+
 /*# sourceMappingURL=custom.css.map */
