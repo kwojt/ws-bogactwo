@@ -1,0 +1,25 @@
+$bgColor: #1256BB;
+$bgColorText: white;
+
+#top-container {
+	position: relative;
+	background: white;
+
+	#top-logotypy {
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+	#top-title {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		color: black;
+		font-size: large;
+		font-weight: bold;
+
+		#biger {
+			font-size: 200%;
+		}
+	}
+}
