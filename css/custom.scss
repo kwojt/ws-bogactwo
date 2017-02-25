@@ -27,7 +27,7 @@ $UEColor: #1256BB;
 }
 
 nav {
-	margin: 20px 0 20px 0;
+	margin: 40px 0 40px 0;
 	height: 90px;
 	background: $UEColor;
 	font-family: palanquin;
@@ -58,10 +58,8 @@ nav {
 			height: 47px;
 			width: 155px;
 			color: white;
-			//text-align: center;
 			margin: 0 2px;
 			padding-top: 30px;
-			//list-style-type: none;
 			
 			&.active {
 				height: 100%;
@@ -77,4 +75,15 @@ nav {
 			}
 		}
 	}	
+}
+
+footer {
+	height: 50px;
+	text-align: right;
+	hr{
+		border: 0;
+		height: 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
 }
