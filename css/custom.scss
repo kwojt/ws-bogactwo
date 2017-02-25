@@ -37,22 +37,11 @@ nav {
 
 	ul{
 		height: 100%;
-		display: inline-block;
+		display: inline-flex;
+		justify-content: center;
+		align-items: flex-end;
 		margin: auto;
 
-		li {
-			display: inline-block;
-			height: 100%;
-			width: 155px;
-			color: white;
-			text-align: center;
-			line-height: 90px;
-
-			&:hover {
-				background: white;
-				color: $UEColor;
-			}
-		}
 		a {
 			color: white;
 			text-decoration: none;
@@ -60,6 +49,31 @@ nav {
 			&:hover {
 				color: $UEColor;
 				text-decoration: none;
+			}
+		}
+		li {
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			height: 47px;
+			width: 155px;
+			color: white;
+			//text-align: center;
+			margin: 0 2px;
+			padding-top: 30px;
+			//list-style-type: none;
+			
+			&.active {
+				height: 100%;
+				background: white;
+				color: $UEColor;
+				line-height: 90px;
+			}
+			&:hover {
+				padding-top:3px;
+				background: white;
+				color: $UEColor;
+				align-items: flex-start;
 			}
 		}
 	}	

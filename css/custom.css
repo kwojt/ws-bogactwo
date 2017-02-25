@@ -30,23 +30,34 @@ nav {
   text-align: center; }
   nav ul {
     height: 100%;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
     margin: auto; }
-    nav ul li {
-      display: inline-block;
-      height: 100%;
-      width: 155px;
-      color: white;
-      text-align: center;
-      line-height: 90px; }
-      nav ul li:hover {
-        background: white;
-        color: #1256BB; }
     nav ul a {
       color: white;
       text-decoration: none; }
       nav ul a:hover {
         color: #1256BB;
         text-decoration: none; }
+    nav ul li {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 47px;
+      width: 155px;
+      color: white;
+      margin: 0 2px;
+      padding-top: 30px; }
+      nav ul li.active {
+        height: 100%;
+        background: white;
+        color: #1256BB;
+        line-height: 90px; }
+      nav ul li:hover {
+        padding-top: 3px;
+        background: white;
+        color: #1256BB;
+        align-items: flex-start; }
 
 /*# sourceMappingURL=custom.css.map */
