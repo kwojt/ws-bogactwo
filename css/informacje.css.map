@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,EAAG;EACF,aAAa,EAAE,sBAAsB;EACrC,OAAO,EAAE,MAAM;EACf,WAAW,EAAE,IAAI;EACjB,WAAW,EACR,8DAGe;EAElB,MAAM,EAAE,OAAO;EAEf,QAAQ;IACP,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,GAAG;;AAIlB,MAAO;EACN,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,KAAK;EAEhB,WAAK;IACJ,SAAS,EAAE,MAAM;IACjB,WAAW,EAAE,IAAI",
+"sources": ["../../../../../home/kwojt/Dropbox/serwer/root/bogactwo/css/informacje.scss"],
+"names": [],
+"file": "informacje.css"
+}

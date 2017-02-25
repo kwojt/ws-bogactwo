@@ -1,0 +1,18 @@
+h1 {
+  border-bottom: 2px solid currentColor;
+  display: inline;
+  line-height: 0.85;
+  text-shadow: 2px 2px white, 2px -2px white, -2px 2px white, -2px -2px white;
+  margin: 5px 5px; }
+  h1:after {
+    content: "\A";
+    white-space: pre; }
+
+#intro {
+  text-align: center;
+  font-size: large; }
+  #intro span {
+    font-size: larger;
+    font-weight: bold; }
+
+/*# sourceMappingURL=informacje.css.map */
