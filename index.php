@@ -29,10 +29,10 @@
 		</div>
 		<nav class="container-fluid">
 			<ul>
-				<a href="index.html"><li class="active">AKTUALNOŚCI</li></a>
-				<a href="#nav"><li>HARMONOGRAM</li></a>
-				<a href="#nav"><li>PERSONEL</li></a>
-				<a href="informacje.html"><li>INFORMACJE</li></a>
+				<a href="index.html"><li <?php if(empty($_GET) || isset($_GET["aktualnosci"])) echo 'class="active"'; ?>>AKTUALNOŚCI</li></a>
+				<a href="#nav"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
+				<a href="#nav"><li <?php if(isset($_GET["personel"])) echo 'class="active"'; ?>>PERSONEL</li></a>
+				<a href="informacje.html"><li <?php if(isset($_GET["informacje"])) echo 'class="active"'; ?>>INFORMACJE</li></a>
 			</ul>
 		</nav>
 		<main class="container">

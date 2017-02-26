@@ -2,6 +2,33 @@
   font-family: palanquin;
   src: url("../fonts/palanquin-semibold.ttf");
   font-weight: 600; }
+h1 {
+  border-bottom: 2px solid currentColor;
+  display: inline;
+  line-height: 0.85;
+  text-shadow: 2px 2px white, 2px -2px white, -2px 2px white, -2px -2px white;
+  margin: 5px 5px; }
+  h1:after {
+    content: "\A";
+    white-space: pre; }
+
+p {
+  margin-top: 40px; }
+
+.bold {
+  font-weight: bold; }
+
+#intro {
+  text-align: center;
+  font-size: large; }
+  #intro span {
+    font-size: larger;
+    font-weight: bold; }
+
+#finances {
+  text-align: center;
+  font-size: larger; }
+
 #top-container {
   position: relative;
   background: white; }
