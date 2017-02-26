@@ -16,6 +16,14 @@ h1 {
 	}
 }
 
+p {
+	margin-top: 40px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
 #intro {
 	text-align: center;
 	font-size: large;
@@ -24,4 +32,9 @@ h1 {
 		font-size: larger;
 		font-weight: bold;
 	}
+}
+
+#finances {
+	text-align: center;
+	font-size: larger;
 }

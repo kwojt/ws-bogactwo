@@ -8,11 +8,21 @@ h1 {
     content: "\A";
     white-space: pre; }
 
+p {
+  margin-top: 40px; }
+
+.bold {
+  font-weight: bold; }
+
 #intro {
   text-align: center;
   font-size: large; }
   #intro span {
     font-size: larger;
     font-weight: bold; }
+
+#finances {
+  text-align: center;
+  font-size: larger; }
 
 /*# sourceMappingURL=informacje.css.map */
