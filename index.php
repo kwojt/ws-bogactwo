@@ -30,7 +30,7 @@
 		<nav class="container-fluid">
 			<ul>
 				<a href="?"><li <?php if(empty($_GET) || isset($_GET["aktualnosci"])) echo 'class="active"'; ?>>AKTUALNOŚCI</li></a>
-				<a href="#nav"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
+				<a href="?harmonogram"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
 				<a href="?personel"><li <?php if(isset($_GET["personel"])) echo 'class="active"'; ?>>PERSONEL</li></a>
 				<a href="?informacje"><li <?php if(isset($_GET["informacje"])) echo 'class="active"'; ?>>INFORMACJE</li></a>
 			</ul>
@@ -43,6 +43,10 @@
 				   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.");
 			}
 
+			else if(isset($_GET["harmonogram"])) {
+				include "harmonogram.html";
+			}
+			
 			else if(isset($_GET["personel"])) {
 				include "personel.html";
 			}
