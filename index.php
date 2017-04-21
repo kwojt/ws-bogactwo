@@ -27,20 +27,26 @@
 				<span id="biger">Odkryjmy bogactwo w nas drzemiące </span><br>w Szkole Podstawowej nr 128 i Publicznym Gimnazjum nr 58 w Łodzi
 			</div>
 		</div>
-		<nav class="container-fluid">
+		<nav class="container-fluid hidden-xs">
 			<ul>
-				<a href="?"><li <?php if(empty($_GET) || isset($_GET["aktualnosci"])) echo 'class="active"'; ?>>AKTUALNOŚCI</li></a>
-				<a href="#nav"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
+				<a href="?"><li <?php if(empty($_GET) || isset($_GET["glowna"])) echo 'class="active"'; ?>>GŁÓWNA</li></a>
+				<a href="?harmonogram"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
+				<a href="?personel"><li <?php if(isset($_GET["personel"])) echo 'class="active"'; ?>>PERSONEL</li></a>
+				<a href="?informacje"><li <?php if(isset($_GET["informacje"])) echo 'class="active"'; ?>>INFORMACJE</li></a>
+			</ul>
+		</nav>
+		<nav id ="mobile-nav" class="container-fluid visible-xs">
+			<ul>
+				<a href="?"><li <?php if(empty($_GET) || isset($_GET["glowna"])) echo 'class="active"'; ?>>GŁÓWNA</li></a>
+				<a href="?harmonogram"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
 				<a href="?personel"><li <?php if(isset($_GET["personel"])) echo 'class="active"'; ?>>PERSONEL</li></a>
 				<a href="?informacje"><li <?php if(isset($_GET["informacje"])) echo 'class="active"'; ?>>INFORMACJE</li></a>
 			</ul>
 		</nav>
 		<main class="container">
 			<?php
-			if(empty($_GET) || isset($_GET["aktualnosci"])) {
-				echo ("Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
-
-				   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.");
+			if(empty($_GET) || isset($_GET["glowna"])) {
+				include("glowna.html");
 			}
 
 			else if(isset($_GET["personel"])) {
