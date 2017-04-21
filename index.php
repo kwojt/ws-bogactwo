@@ -49,6 +49,10 @@
 				include("glowna.html");
 			}
 
+			else if(isset($_GET["harmonogram"])) {
+				include "harmonogram.html";
+			}
+			
 			else if(isset($_GET["personel"])) {
 				include "personel.html";
 			}
