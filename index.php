@@ -27,7 +27,7 @@
 				<span id="biger">Odkryjmy bogactwo w nas drzemiące </span><br>w Szkole Podstawowej nr 128 i Publicznym Gimnazjum nr 58 w Łodzi
 			</div>
 		</div>
-		<nav class="container-fluid hidden-xs">
+		<nav id="desktop-nav" class="container-fluid hidden-xs">
 			<ul>
 				<a href="?"><li <?php if(empty($_GET) || isset($_GET["glowna"])) echo 'class="active"'; ?>>GŁÓWNA</li></a>
 				<a href="?harmonogram"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
@@ -36,7 +36,7 @@
 			</ul>
 		</nav>
 		<nav id ="mobile-nav" class="container-fluid visible-xs">
-			<ul>
+			<ul class="list-unstyled">
 				<a href="?"><li <?php if(empty($_GET) || isset($_GET["glowna"])) echo 'class="active"'; ?>>GŁÓWNA</li></a>
 				<a href="?harmonogram"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
 				<a href="?personel"><li <?php if(isset($_GET["personel"])) echo 'class="active"'; ?>>PERSONEL</li></a>

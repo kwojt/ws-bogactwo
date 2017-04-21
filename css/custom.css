@@ -1,6 +1,6 @@
 @font-face {
   font-family: palanquin;
-  src: url("../fonts/palanquin-semibold.ttf");
+  sqrc: url("../fonts/palanquin-semibold.ttf");
   font-weight: 600; }
 .harmonogram {
   text-align: center; }
@@ -50,7 +50,7 @@ p {
     #top-container #top-title #biger {
       font-size: 200%; }
 
-nav {
+nav#desktop-nav {
   margin: 40px 0 40px 0;
   height: 90px;
   background: #1256BB;
@@ -58,19 +58,19 @@ nav {
   font-size: large;
   font-weight: bold;
   text-align: center; }
-  nav ul {
+  nav#desktop-nav ul {
     height: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: flex-end;
     margin: auto; }
-    nav ul a {
+    nav#desktop-nav ul a {
       color: white;
       text-decoration: none; }
-      nav ul a:hover {
+      nav#desktop-nav ul a:hover {
         color: #1256BB;
         text-decoration: none; }
-    nav ul li {
+    nav#desktop-nav ul li {
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -79,16 +79,42 @@ nav {
       color: white;
       margin: 0 2px;
       padding-top: 30px; }
-      nav ul li.active {
+      nav#desktop-nav ul li.active {
         height: 100%;
         background: white;
         color: #1256BB;
         line-height: 90px; }
-      nav ul li:hover {
+      nav#desktop-nav ul li:hover {
         padding-top: 3px;
         background: white;
         color: #1256BB;
         align-items: flex-start; }
+
+nav#mobile-nav {
+  margin: 40px 0 40px 0;
+  padding: 0;
+  height: 100px;
+  background: #1256BB;
+  text-align: center; }
+  nav#mobile-nav ul {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0; }
+    nav#mobile-nav ul a {
+      width: 23%;
+      height: 100%;
+      margin: 0;
+      font-size: 8px;
+      position: relative;
+      top: -7px;
+      color: white;
+      text-decoration: none; }
+      nav#mobile-nav ul a:hover {
+        color: #1256BB;
+        text-decoration: none; }
 
 footer {
   height: 50px;
