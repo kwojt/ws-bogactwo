@@ -90,12 +90,18 @@ nav#desktop-nav {
         color: #1256BB;
         align-items: flex-start; }
 
+.v-bottom {
+  vertical-align: text-bottom; }
+
 nav#mobile-nav {
-  margin: 40px 0 40px 0;
+  position: fixed;
+  z-index: 100;
+  margin: 0 0 40px 0;
   padding: 0;
   height: 100px;
   background: #1256BB;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   nav#mobile-nav ul {
     width: 100%;
     height: 100%;
@@ -104,6 +110,7 @@ nav#mobile-nav {
     align-items: flex-end;
     margin: 0; }
     nav#mobile-nav ul a {
+      display: inline-block;
       width: 23%;
       height: 100%;
       margin: 0;
@@ -115,6 +122,25 @@ nav#mobile-nav {
       nav#mobile-nav ul a:hover {
         color: #1256BB;
         text-decoration: none; }
+    nav#mobile-nav ul li {
+      height: 100%; }
+    nav#mobile-nav ul li.active {
+      background-color: white;
+      color: #1256BB; }
+
+.nav-glyph {
+  font-size: 40px; }
+
+#mobile-nav-spacer {
+  width: 100%;
+  height: 100px; }
+
+#mobile-nav-spacer-bottom {
+  width: 100%;
+  height: 15px;
+  display: block;
+  margin: 10px 0 10px 0;
+  background: #1256BB; }
 
 footer {
   height: 50px;

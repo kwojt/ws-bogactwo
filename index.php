@@ -21,6 +21,15 @@
 		<link href="css/custom.css" rel="stylesheet">
 	</head>
 	<body>
+		<nav id ="mobile-nav" class="visible-xs">
+			<ul class="list-unstyled">
+				<a href="?"><li <?php if(empty($_GET) || isset($_GET["glowna"])) echo 'class="active"'; ?>><br><br><span class="glyphicon glyphicon-home nav-glyph" aria-hidden="true"></span><br><br>GŁÓWNA</li></a>
+				<a href="?harmonogram"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>><br><br><span class="glyphicon glyphicon-calendar nav-glyph" aria-hidden="true"></span><br><br>HARMONOGRAM</li></a>
+				<a href="?galeria"><li <?php if(isset($_GET["galeria"])) echo 'class="active"'; ?>><br><br><span class="glyphicon glyphicon-picture nav-glyph" aria-hidden="true"></span><br><br>GALERIA</li></a>
+				<a href="?informacje"><li <?php if(isset($_GET["informacje"])) echo 'class="active"'; ?>><br><br><span class="glyphicon glyphicon-info-sign nav-glyph" aria-hidden="true"></span><br><br>INFORMACJE</li></a>
+			</ul>
+		</nav>
+		<div id="mobile-nav-spacer" class="visible-xs"></div>
 		<div class="container" id="top-container">
 			<img src="img/logotypy.jpg" id="top-logotypy">
 			<div id="top-title">
@@ -31,18 +40,11 @@
 			<ul>
 				<a href="?"><li <?php if(empty($_GET) || isset($_GET["glowna"])) echo 'class="active"'; ?>>GŁÓWNA</li></a>
 				<a href="?harmonogram"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
-				<a href="?personel"><li <?php if(isset($_GET["personel"])) echo 'class="active"'; ?>>PERSONEL</li></a>
+				<a href="?galeria"><li <?php if(isset($_GET["galeria"])) echo 'class="active"'; ?>>GALERIA</li></a>
 				<a href="?informacje"><li <?php if(isset($_GET["informacje"])) echo 'class="active"'; ?>>INFORMACJE</li></a>
 			</ul>
 		</nav>
-		<nav id ="mobile-nav" class="container-fluid visible-xs">
-			<ul class="list-unstyled">
-				<a href="?"><li <?php if(empty($_GET) || isset($_GET["glowna"])) echo 'class="active"'; ?>>GŁÓWNA</li></a>
-				<a href="?harmonogram"><li <?php if(isset($_GET["harmonogram"])) echo 'class="active"'; ?>>HARMONOGRAM</li></a>
-				<a href="?personel"><li <?php if(isset($_GET["personel"])) echo 'class="active"'; ?>>PERSONEL</li></a>
-				<a href="?informacje"><li <?php if(isset($_GET["informacje"])) echo 'class="active"'; ?>>INFORMACJE</li></a>
-			</ul>
-		</nav>
+		<div id="mobile-nav-spacer-bottom" class="visible-xs"></div>
 		<main class="container">
 			<?php
 			if(empty($_GET) || isset($_GET["glowna"])) {
@@ -53,7 +55,7 @@
 				include "harmonogram.html";
 			}
 			
-			else if(isset($_GET["personel"])) {
+			else if(isset($_GET["galeria"])) {
 				include "personel.html";
 			}
 			
