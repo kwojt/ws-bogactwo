@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,YAAa;EACZ,UAAU,EAAE,MAAM",
+"mappings": "AAAA,YAAa;EACZ,UAAU,EAAE,MAAM;;AAEnB,gBACA;EACC,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,OAAO",
 "sources": ["../../../../../home/kwojt/Dropbox/serwer/root/bogactwo/css/harmonogram.scss"],
 "names": [],
 "file": "harmonogram.css"

@@ -5,6 +5,12 @@
 .harmonogram {
   text-align: center; }
 
+.table-container {
+  width: 100%;
+  overflow-y: auto;
+  _overflow: auto;
+  margin: 0 0 1em; }
+
 h1 {
   border-bottom: 2px solid currentColor;
   display: inline;
