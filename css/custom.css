@@ -1,6 +1,6 @@
 @font-face {
   font-family: palanquin;
-  sqrc: url("../fonts/palanquin-semibold.ttf");
+  src: url("../fonts/palanquin-semibold.ttf");
   font-weight: 600; }
 .harmonogram {
   text-align: center; }

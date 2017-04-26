@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,UAIC;EAHG,WAAW,EAAE,SAAS;EACtB,IAAI,EAAE,sCAAsC;EAC/C,WAAW,EAAE,GAAG",
+"mappings": "AAAA,UAIC;EAHG,WAAW,EAAE,SAAS;EACtB,GAAG,EAAE,sCAAsC;EAC9C,WAAW,EAAE,GAAG",
 "sources": ["../../../../../home/kwojt/Dropbox/serwer/root/bogactwo/css/fonts.scss"],
 "names": [],
 "file": "fonts.css"
