@@ -1,3 +1,4 @@
+$UEColor-light: #d1e2fb;
 .harmonogram {
 	text-align: center;
 }
@@ -7,4 +8,28 @@
 	overflow-y: auto;
 	_overflow: auto;
 	margin: 0 0 1em;
+	text-align: center;
+
+	table {
+		margin: 0 auto;
+		width: fit-content;
+
+		thead {
+			background: $UEColor-light;
+		}
+	}
+}
+
+.col-lead {
+	width: 95px;
+	border-right: 2px solid #ddd;
+	background: $UEColor-light;
+}
+
+.col-time {
+	width: 300px;
+}
+
+#table-time {
+	width: fit-content;
 }

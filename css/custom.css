@@ -9,7 +9,24 @@
   width: 100%;
   overflow-y: auto;
   _overflow: auto;
-  margin: 0 0 1em; }
+  margin: 0 0 1em;
+  text-align: center; }
+  .table-container table {
+    margin: 0 auto;
+    width: fit-content; }
+    .table-container table thead {
+      background: #d1e2fb; }
+
+.col-lead {
+  width: 95px;
+  border-right: 2px solid #ddd;
+  background: #d1e2fb; }
+
+.col-time {
+  width: 300px; }
+
+#table-time {
+  width: fit-content; }
 
 h1 {
   border-bottom: 2px solid currentColor;
