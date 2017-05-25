@@ -9,16 +9,10 @@ $galleryDir = scandir("gallery");
 if (sizeof($galleryDir) < 3) {
 	// TODO LAST
 }
-echo "Galeria:<br>";
-foreach($galleryDir as $result) {
-    echo $result, '<br>';
-}
-echo "Elm w tablicy: ", sizeof($galleryDir);
 
 for ($i = 2; $i < sizeof($galleryDir); $i++) {
 	if (!is_dir("gallery/" . $galleryDir[$i])) continue;
 
-	echo "Znaleziono folder:", $galleryDir[$i];
 	$gallery = scandir("gallery/" . $galleryDir[$i]);
 
 	echo '<a href="#"><div class="galleryLink">';
