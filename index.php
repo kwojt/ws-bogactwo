@@ -19,6 +19,7 @@
 		<![endif]-->
 		<!-- Własne style -->
 		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/galeria.css" rel="stylesheet">
 	</head>
 	<body>
 		<nav id ="mobile-nav" class="visible-xs">
@@ -56,7 +57,7 @@
 			}
 			
 			else if(isset($_GET["galeria"])) {
-				include "personel.html";
+				include "galeria.php";
 			}
 			
 			else if(isset($_GET["informacje"])) {
