@@ -1,3 +1,9 @@
+// CSS for gallery AND album
+
+$break-phone: 767px;
+$break-tablet: 991px;
+$break-desktop: 1199px;
+
 .galleryLink {
 
 	margin: 5px;
@@ -18,11 +24,61 @@
 	
 	img {
 		height: 180px;
+		margin: 5px;
 	}
 
 	.galleryDesc {
 		padding: 15px;
 		text-align: center;
+	}
+}
+
+.album-grid {
+	margin: 0 auto;
+	perspective: 1300px;
+}
+
+.album-grid-item {
+	margin: 5px;
+	border: 1px black solid;
+	@media screen and (max-width: $break-phone) {
+		max-width: 100%;
+	}
+
+	@media screen and (max-width: $break-tablet) {
+		max-width: 25%;
+	}
+	
+	@media screen and (min-width: $break-desktop) {
+		max-width: 220px;
+	}
+
+	// Animation section
+	transform-style: preserve-3d;
+
+	.animate {
+		transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+		animation: fallPerspective .8s ease-in-out forwards;
+	}
+}
+
+@keyframes fallPerspective {
+	100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
+
+#grid-sizer {
+	display: block;
+	height: 1px;
+	@media screen and (max-width: $break-phone) {
+		width: 100%;
+	}
+
+	@media screen and (max-width: $break-tablet) {
+		width: 25%;
+	}
+	
+	@media screen and (min-width: $break-desktop) {
+		width: 220px;
 	}
 }
 

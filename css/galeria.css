@@ -11,10 +11,49 @@
   .galleryLink:hover {
     border: 1px solid #777; }
   .galleryLink img {
-    height: 180px; }
+    height: 180px;
+    margin: 5px; }
   .galleryLink .galleryDesc {
     padding: 15px;
     text-align: center; }
+
+.album-grid {
+  margin: 0 auto;
+  perspective: 1300px; }
+
+.album-grid-item {
+  margin: 5px;
+  border: 1px black solid;
+  transform-style: preserve-3d; }
+  @media screen and (max-width: 767px) {
+    .album-grid-item {
+      max-width: 100%; } }
+  @media screen and (max-width: 991px) {
+    .album-grid-item {
+      max-width: 25%; } }
+  @media screen and (min-width: 1199px) {
+    .album-grid-item {
+      max-width: 220px; } }
+  .album-grid-item .animate {
+    transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+    animation: fallPerspective .8s ease-in-out forwards; }
+
+@keyframes fallPerspective {
+  100% {
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1; } }
+#grid-sizer {
+  display: block;
+  height: 1px; }
+  @media screen and (max-width: 767px) {
+    #grid-sizer {
+      width: 100%; } }
+  @media screen and (max-width: 991px) {
+    #grid-sizer {
+      width: 25%; } }
+  @media screen and (min-width: 1199px) {
+    #grid-sizer {
+      width: 220px; } }
 
 .row > .column {
   padding: 0 8px; }

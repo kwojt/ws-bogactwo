@@ -59,6 +59,10 @@
 			else if(isset($_GET["galeria"])) {
 				include "galeria.php";
 			}
+
+			else if(isset($_GET["album"])) {
+				include "album.php";
+			}
 			
 			else if(isset($_GET["informacje"])) {
 				include "informacje.html";
@@ -72,5 +76,39 @@
 		<!-- Bootstrap and jQuery scrpit files -->
 		<script src="misc/jquery/dist/jquery.min.js"></script>
 		<script src="misc/bootstrap/dist/js/bootstrap.min.js"></script>
+		<?php
+		if(isset($_GET["album"])) {
+			echo ('
+				<!-- Gallery script -->
+                <script src="misc/jquery_lazyload/jquery.lazyload.js"></script>
+				<script src="misc/imagesloaded.pkgd.min.js"></script>
+				<script src="misc/masonry.pkgd.min.js"></script>
+				<script src="misc/classie.js"></script>
+				<script src="misc/AnimOnScroll.js"></script>
+				<script>
+				$(function() {
+				    $(".album-grid-item img").lazyload();
+				});
+				// init Masonry
+				var $grid = $(".album-grid").masonry({
+					// options
+					itemSelector: ".album-grid-item",
+                    fitWidth: true
+				});
+				
+				// layout Masonry after each image loads
+				$grid.imagesLoaded().progress( function() {
+			 $grid.masonry("layout");
+				});
+
+				// Fall animation
+				new AnimOnScroll( document.getElementById(".album-grid"), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+				} );
+				</script>');
+		}
+		?>
 	</body>
 </html>
