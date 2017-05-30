@@ -1,4 +1,4 @@
-<div class="album-grid">
+<div id="album-grid">
 	<div id="grid-sizer"></div>
 	<?php
 
