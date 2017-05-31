@@ -83,30 +83,21 @@
                 <script src="misc/jquery_lazyload/jquery.lazyload.js"></script>
 				<script src="misc/imagesloaded.pkgd.min.js"></script>
 				<script src="misc/masonry.pkgd.min.js"></script>
-				<script src="misc/classie/classie.js"></script>
-				<script src="misc/AnimOnScroll.js"></script>
 				<script>
-				//$(function() {
-				//    $(".album-grid-item img").lazyload();
-				//});
+				$(function() {
+				    $(".album-grid-item img").lazyload();
+				});
 				// init Masonry
 				var $grid = $(".album-grid").masonry({
 					// options
 					itemSelector: ".album-grid-item",
-                    fitWidth: true
+                fitWidth: true
 				});
 				
 				// layout Masonry after each image loads
 				$grid.imagesLoaded().progress( function() {
-				$grid.masonry("layout");
+			 $grid.masonry("layout");
 				});
-
-				// Fall animation
-				new AnimOnScroll( document.getElementById(".album-grid"), {
-				minDuration : 0.4,
-				maxDuration : 0.7,
-				viewportFactor : 0.2
-				} );
 				</script>');
 		}
 		?>

@@ -9,7 +9,7 @@ for ($i = 2; $i < sizeof($galleryDir); $i++) {
 	$gallery = scandir("gallery/" . $galleryDir[$i]);
 
 	echo '<a href="?album='.urlencode($galleryDir[$i]).'"><div class="galleryLink">';
-	echo '<img src="gallery/'.$galleryDir[$i].'/'.$gallery[2].'" alt="'.$galleryDir[$i].'">';
+	echo '<img src="gallery/'.$galleryDir[$i].'/thumbs/'.$gallery[2].'" alt="'.$galleryDir[$i].'">';
 	echo '<div class="galleryDesc">' . $galleryDir[$i] . '</div>';
 	echo '</div></a>';
 
