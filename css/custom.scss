@@ -1,8 +1,14 @@
 @import 'fonts';
 @import 'harmonogram';
 @import 'informacje';
+@import 'galeria';
+@import 'glowna';
 
 $UEColor: #1256BB;
+
+.bold {
+	font-weight: bold;
+}
 
 #top-container {
 	position: relative;

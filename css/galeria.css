@@ -11,7 +11,8 @@
   .galleryLink:hover {
     border: 1px solid #777; }
   .galleryLink img {
-    height: 180px;
+    max-width: 165px;
+    max-height: 180px;
     margin: 5px; }
   .galleryLink .galleryDesc {
     padding: 15px;

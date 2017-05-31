@@ -19,7 +19,6 @@
 		<![endif]-->
 		<!-- Custom styles -->
 		<link href="css/custom.css" rel="stylesheet">
-		<link href="css/galeria.css" rel="stylesheet">
 		<?php
 		if(isset($_GET["album"])) {
 			echo ('

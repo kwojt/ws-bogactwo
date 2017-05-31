@@ -55,6 +55,176 @@ p {
   text-align: center;
   font-size: larger; }
 
+.galleryLink {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  text-align: center;
+  color: black; }
+  .galleryLink:hover {
+    font-weight: bold;
+    text-decoration: none; }
+  .galleryLink:hover {
+    border: 1px solid #777; }
+  .galleryLink img {
+    max-width: 165px;
+    max-height: 180px;
+    margin: 5px; }
+  .galleryLink .galleryDesc {
+    padding: 15px;
+    text-align: center; }
+
+.album-grid {
+  margin: 0 auto;
+  perspective: 1300px; }
+
+.album-grid-item {
+  margin: 5px;
+  border: 1px black solid;
+  transform-style: preserve-3d; }
+  @media screen and (max-width: 767px) {
+    .album-grid-item {
+      max-width: 100%; } }
+  @media screen and (max-width: 991px) {
+    .album-grid-item {
+      max-width: 25%; } }
+  @media screen and (min-width: 1199px) {
+    .album-grid-item {
+      max-width: 220px; } }
+  .album-grid-item .animate {
+    transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+    animation: fallPerspective .8s ease-in-out forwards; }
+
+@keyframes fallPerspective {
+  100% {
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1; } }
+#grid-sizer {
+  display: block;
+  height: 1px; }
+  @media screen and (max-width: 767px) {
+    #grid-sizer {
+      width: 100%; } }
+  @media screen and (max-width: 991px) {
+    #grid-sizer {
+      width: 25%; } }
+  @media screen and (min-width: 1199px) {
+    #grid-sizer {
+      width: 220px; } }
+
+.row > .column {
+  padding: 0 8px; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.column {
+  float: left;
+  width: 25%; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black; }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px; }
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer; }
+
+.mySlides {
+  display: none; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white; }
+
+img.demo {
+  opacity: 0.6; }
+
+.active,
+.demo:hover {
+  opacity: 1; }
+
+img.hover-shadow {
+  transition: 0.3s; }
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#kontakt-sider {
+  border-right: 1px solid black; }
+
+.bold {
+  font-weight: bold; }
+
 #top-container {
   position: relative;
   background: white; }
