@@ -11,7 +11,7 @@
 
 		if (is_dir("gallery/".$albumName."/".$albumDir[$i])) continue;
 		
-		echo '<a href="#">';
+		echo '<a href="gallery/'.$albumName.'/'.$albumDir[$i].'" data-lightbox="album">';
 		echo '<img class="album-grid-item" src="gallery/'.$albumName.'/thumbs/'.$albumDir[$i].'" alt="'.$albumDir[$i].'">';
 		echo '</a>';
 

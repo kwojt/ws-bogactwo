@@ -17,9 +17,17 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<!-- Własne style -->
+		<!-- Custom styles -->
 		<link href="css/custom.css" rel="stylesheet">
 		<link href="css/galeria.css" rel="stylesheet">
+		<?php
+		if(isset($_GET["album"])) {
+			echo ('
+		   <!-- Lightbox stylesheet -->
+		   <link href="misc/lightbox2/src/css/lightbox.css" rel="stylesheet">
+				');
+		}
+		?>
 	</head>
 	<body>
 		<nav id ="mobile-nav" class="visible-xs">
@@ -79,14 +87,13 @@
 		<?php
 		if(isset($_GET["album"])) {
 			echo ('
-				<!-- Gallery script -->
-                <script src="misc/jquery_lazyload/jquery.lazyload.js"></script>
+		   <!-- Gallery script -->
+		   <link href="misc/lightbox2/src/css/lightbox.css">
+                <script src="misc/lightbox2/src/js/lightbox.js"></script>
 				<script src="misc/imagesloaded.pkgd.min.js"></script>
 				<script src="misc/masonry.pkgd.min.js"></script>
 				<script>
-				$(function() {
-				    $(".album-grid-item img").lazyload();
-				});
+
 				// init Masonry
 				var $grid = $(".album-grid").masonry({
 					// options
