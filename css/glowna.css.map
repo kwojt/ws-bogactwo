@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,cAAe;EACd,YAAY,EAAE,eAAe",
+"mappings": "AAEA,cAAe;EACd,YAAY,EAAE,eAAe;;AAM7B,UAAG;EACF,WAAW,EAAE,GAAG;AAGjB,qBAAc;EACb,WAAW,EAAE,iBAAkB;EAC/B,YAAY,EAAE,GAAG;AAGlB,UAAG;EACF,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;AAGjB,UAAG;EACF,eAAe,EAAE,MAAM",
 "sources": ["../../../../../home/kwojt/Dropbox/serwer/root/bogactwo/css/glowna.scss"],
 "names": [],
 "file": "glowna.css"

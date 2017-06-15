@@ -222,6 +222,17 @@ img.hover-shadow {
 #kontakt-sider {
   border-right: 1px solid black; }
 
+article h2 {
+  font-weight: 600; }
+article .articleTitle {
+  border-left: 4px solid #1256BB;
+  padding-left: 5px; }
+article h3 {
+  font-size: large;
+  font-weight: 600; }
+article ul {
+  list-style-type: square; }
+
 .bold {
   font-weight: bold; }
 

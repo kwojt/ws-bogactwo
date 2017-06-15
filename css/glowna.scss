@@ -1,3 +1,27 @@
+$UEColor: #1256BB;
+
 #kontakt-sider {
 	border-right: 1px solid black;
+}
+
+//=================================
+
+article {
+	h2 {
+		font-weight: 600;
+	}
+
+	.articleTitle {
+		border-left: 4px solid $UEColor;
+		padding-left: 5px;
+	}
+
+	h3 {
+		font-size: large;
+		font-weight: 600;
+	}
+
+	ul {
+		list-style-type: square;
+	}
 }
