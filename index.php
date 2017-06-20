@@ -78,6 +78,9 @@
 		</main>
 		<footer class="container">
 			<hr>
+			<span class="footer-left">
+				Strona współfinansowana z środków Europejskiego Funduszu Społecznego w ramach<br>Regionalnego Programu Operacyjnego Województwa Łódzkiego na lata 2014-2020.
+			</span>
 			Site by kwojt 2017
 		</footer>
 		<!-- Bootstrap and jQuery scrpit files -->
