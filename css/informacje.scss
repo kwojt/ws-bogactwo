@@ -1,3 +1,7 @@
+$BR-tablet: 768px;
+$BR-desktop: 992px;
+$BR-large: 1200px;
+
 h1 {
 	border-bottom: 2px solid currentColor;
 	display: inline;
@@ -37,4 +41,10 @@ p {
 #finances {
 	text-align: center;
 	font-size: larger;
+}
+
+#innopolis {
+	@media screen and (min-width: $BR-tablet) {
+		float: right;
+	}
 }
