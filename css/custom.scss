@@ -6,6 +6,10 @@
 
 $UEColor: #1256BB;
 
+$BR-tablet: 768px;
+$BR-desktop: 992px;
+$BR-large: 1200px;
+
 .bold {
 	font-weight: bold;
 }
@@ -17,8 +21,13 @@ $UEColor: #1256BB;
 	#top-logotypy {
 		display: block;
 		margin: auto;
-		width: 50%;
+		width: 80%;
+
+		@media screen and (max-width: $BR-tablet) {
+			width: 100%;
+		}
 	}
+
 	#top-title {
 		display: inline-block;
 		width: 100%;

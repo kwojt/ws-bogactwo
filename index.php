@@ -39,7 +39,7 @@
 		</nav>
 		<div id="mobile-nav-spacer" class="visible-xs"></div>
 		<div class="container" id="top-container">
-			<img src="img/logotypy.jpg" id="top-logotypy">
+			<img src="img/logotypy.png" id="top-logotypy">
 			<div id="top-title">
 				<span id="biger">Odkryjmy bogactwo w nas drzemiące </span><br>w Szkole Podstawowej nr 128 i Publicznym Gimnazjum nr 58 w Łodzi
 			</div>

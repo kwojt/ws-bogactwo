@@ -242,7 +242,10 @@ article ul {
   #top-container #top-logotypy {
     display: block;
     margin: auto;
-    width: 50%; }
+    width: 80%; }
+    @media screen and (max-width: 768px) {
+      #top-container #top-logotypy {
+        width: 100%; } }
   #top-container #top-title {
     display: inline-block;
     width: 100%;
