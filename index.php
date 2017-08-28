@@ -109,7 +109,29 @@
 				});
 				</script>');
 		}
-		
+		if(isset($_GET["galeria"])) {
+			echo ('
+		   <!-- Gallery script -->
+		   <link href="misc/lightbox2/src/css/lightbox.css">
+                <script src="misc/lightbox2/src/js/lightbox.js"></script>
+				<script src="misc/imagesloaded.pkgd.min.js"></script>
+				<script src="misc/masonry.pkgd.min.js"></script>
+				<script>
+
+				// init Masonry
+				var $grid = $(".galleryContainer").masonry({
+					// options
+					itemSelector: ".album-grid-item",
+                //fitWidth: true,
+columnWidth: 100
+				});
+				
+				// layout Masonry after each image loads
+				$grid.imagesLoaded().progress( function() {
+			 $grid.masonry("layout");
+				});
+				</script>');
+		}
 		?>
 	</body>
 </html>
