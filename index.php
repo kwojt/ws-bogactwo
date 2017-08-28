@@ -119,9 +119,9 @@
 				// init Masonry
 				var $grid = $(".gallery-grid").masonry({
 					// options
-					itemSelector: ".galleryLink,
+					itemSelector: ".galleryLink",
                 //fitWidth: true,
-columnWidth: 100
+columnWidth: 1
 				});
 				
 				// layout Masonry after each image loads
